@@ -5,8 +5,8 @@
 /*** TYPOGRAPHY ***/
 $font-size: 16px;
 $baseline-height: 30px;
-$font-family-sans: 'Raleway', 'Open Sans',Arial, sans-serif;
-$font-family-serif: Georgia, serif;
+$font-family-sans: 'Roboto', 'Open Sans',Arial, sans-serif;
+$font-family-serif: 'Roboto Slab', Georgia, serif;
 
 
 /*** COLORS ***/
@@ -16,13 +16,13 @@ $anchor-color: #0044CC;
 $anchor-hover: lighten($anchor-color,25%);
 $anchor-visited: #800080;
 /* background-primary */
-$base-bckgd: #000;
+$base-bckgd: #ddd;
 $light-bckgd: lighten($base-bckgd, 25%);
 $lighter-bckgd: lighten($base-bckgd, 50%);
 $dark-bckgd: darken($base-bckgd, 25%);
 $darker-bckgd: darken($base-bckgd, 50%);
 /* background-secondary */
-$base-bckgd-2: #000;
+$base-bckgd-2: #fff;
 $light-bckgd-2: lighten($base-bckgd-2, 25%);
 $lighter-bckgd-2: lighten($base-bckgd-2, 50%);
 $dark-bckgd-2: darken($base-bckgd-2, 25%);

@@ -1,0 +1,51 @@
+/*
+*	Form styles
+*/
+
+.form-wrapper {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	
+	form {
+		display: inline-flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+
+		text-align: left;
+
+		max-width: 20vw;
+		padding: 1.5em;
+		background-color: $base-bckgd;
+
+		.form-header {
+			margin: 0;
+		}
+
+		label {
+			display: inline-block;
+			margin: .3em 0;
+		}
+
+		input,textarea,select {
+			border-radius: 3px;
+			box-shadow: none;
+			outline: none;
+			padding: 8px 4px;
+			border: 1px solid #999;
+			width: 100%;
+		}
+
+		input[type='text'] {}
+
+		input[type='submit'] {
+			padding: 8px 16px;
+		}
+
+		textarea {}
+
+		select {
+			option {}
+		}
+	}
+}

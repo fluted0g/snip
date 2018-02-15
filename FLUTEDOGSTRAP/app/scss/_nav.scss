@@ -5,6 +5,8 @@
 .nav-wrapper {
 	position: relative;
 	padding-bottom: 1em;
+	height: 1px;
+	width: 1px;
 
 	.fix-nav {
 		position: fixed;
@@ -12,7 +14,7 @@
 	}
 }
 
-.nav-01 {
+.nav-full-width {
 
 	.fix-nav {
 		width: 100%;
@@ -74,17 +76,17 @@
 	}
 }
 
-.nav-02 {
+.nav-centered {
 	
 	.fix-nav {
 		display: inline-flex;
 		flex-flow: row nowrap;
 		justify-content: space-around;
 		
+		min-width: 66.6666%;
+
 		left: 50%;
 		transform: translateX(-50%);
-		
-		min-width: 66.6666%;
 	}
 
 	.logo-box {
@@ -97,8 +99,8 @@
 	}
 
 	ul {
-		list-style: none;
 		padding: 3px 0;
+		list-style: none;
 
 		li {
 			display: inline-block;
@@ -106,21 +108,88 @@
 			
 			a {
 				display: inline-block;
-				padding: 0 14px;
 				height: 100%;
 				width: 100%;
-				color: inherit;
+				padding: 0 14px;
 				border: 3px solid $placeholder-gray;
 				border-radius: 3px;
+				color: inherit;
 
 				&:hover {
 					background: #bbb;
 					border: 3px solid #bbb;
+					text-decoration: none; 
 				}
 
 				&:focus {
 					background: #bbb;
 					border: 3px solid #ddd;
+					text-decoration: none; 
+				}
+			}
+		}
+	}
+}
+
+.nav-vertical {
+	margin-left: -1px;
+	padding-bottom: 0;
+
+
+	.fix-nav {
+		display: inline-flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		
+		max-width: 5%;
+		height: 100%;
+	}
+
+	.logo-box {
+		display: inline-block;
+		min-height: 5%;
+		max-height: 15%; 
+
+		text-align: center;
+
+		img, .logo {
+			margin: 0 auto;
+		}
+	}
+
+	ul {
+		padding: 3px 0;
+
+		text-align: left;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin: 7px 0;
+			width: 100%;
+			font-size: 1.175em;
+			
+			a {
+				display: inline-block;
+				height: 100%;
+				width: 100%;
+				padding: 0 14px;
+				border-top: 3px solid $placeholder-gray;
+				border-bottom: 3px solid $placeholder-gray;
+				color: inherit;
+
+				&:hover {
+					background: #bbb;
+					border-top: 3px solid #bbb;
+					border-bottom: 3px solid #bbb;
+					text-decoration: none; 
+				}
+
+				&:focus {
+					background: #bbb;
+					border-top: 3px solid #ddd;
+					border-bottom: 3px solid #ddd;
+					text-decoration: none; 
 				}
 			}
 		}
