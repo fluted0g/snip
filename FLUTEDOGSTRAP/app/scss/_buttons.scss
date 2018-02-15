@@ -17,7 +17,7 @@
 
 .bt-primary {
 	background: $bt-primary;
-	border: 1px solid #fff;
+	border: 1px solid $bt-primary;
 
 	&:hover {
 		color: $bt-primary;
@@ -32,7 +32,7 @@
 
 .bt-secondary {
 	background: $bt-secondary;
-	border: 1px solid #fff;
+	border: 1px solid $bt-secondary;
 
 	&:hover {
 		color: $bt-secondary;
@@ -53,7 +53,6 @@
 	&:hover {
 		color: #fff;
 		background: $bt-primary;
-		border: 1px solid #fff;
 	}
 
 	&:focus {
@@ -69,7 +68,6 @@
 	&:hover {
 		color: #fff;
 		background: $bt-secondary;
-		border: 1px solid #fff;
 	}
 
 	&:focus {
@@ -79,7 +77,7 @@
 
 .bt-success {
 	background: $bt-success;
-	border: 1px solid #fff;
+	border: 1px solid $bt-success;
 
 	&:hover {
 		color: $bt-success;
@@ -94,7 +92,7 @@
 
 .bt-warning {
 	background: $bt-warning;
-	border: 1px solid #fff;
+	border: 1px solid $bt-warning;
 
 	&:hover {
 		color: $bt-warning;
@@ -109,7 +107,7 @@
 
 .bt-danger {
 	background: $bt-danger;
-	border: 1px solid #fff;
+	border: 1px solid $bt-danger;
 
 	&:hover {
 		color: $bt-danger;

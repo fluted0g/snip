@@ -185,7 +185,7 @@ img {
 :root {
   line-height: 30px;
   font-size: 16px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Raleway", "Open Sans", Arial, sans-serif;
   text-rendering: optimizeLegibility; }
 
 a {
@@ -200,12 +200,13 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin: 15px 0;
   font-weight: bold;
-  text-rendering: optimizeLegibility; }
+  color: #000; }
   h1 .subheader, h2 .subheader, h3 .subheader, h4 .subheader, h5 .subheader, h6 .subheader {
     display: block;
+    color: gray;
     text-align: center;
     font-weight: normal;
-    font-size: .75em;
+    font-size: .85em;
     line-height: 1em; }
 
 h1, h2, h3 {
@@ -370,7 +371,7 @@ h6 {
 
 .bt-primary {
   background: #107896;
-  border: 1px solid #fff; }
+  border: 1px solid #107896; }
   .bt-primary:hover {
     color: #107896;
     background: #fff;
@@ -380,7 +381,7 @@ h6 {
 
 .bt-secondary {
   background: #43abc9;
-  border: 1px solid #fff; }
+  border: 1px solid #43abc9; }
   .bt-secondary:hover {
     color: #43abc9;
     background: #fff;
@@ -394,8 +395,7 @@ h6 {
   border: 1px solid #107896; }
   .bt-primary-ghost:hover {
     color: #fff;
-    background: #107896;
-    border: 1px solid #fff; }
+    background: #107896; }
   .bt-primary-ghost:focus {
     box-shadow: 0 0 5px #107896; }
 
@@ -405,14 +405,13 @@ h6 {
   border: 1px solid #43abc9; }
   .bt-secondary-ghost:hover {
     color: #fff;
-    background: #43abc9;
-    border: 1px solid #fff; }
+    background: #43abc9; }
   .bt-secondary-ghost:focus {
     box-shadow: 0 0 5px #43abc9; }
 
 .bt-success {
   background: #829356;
-  border: 1px solid #fff; }
+  border: 1px solid #829356; }
   .bt-success:hover {
     color: #829356;
     background: #fff;
@@ -422,7 +421,7 @@ h6 {
 
 .bt-warning {
   background: #F26D21;
-  border: 1px solid #fff; }
+  border: 1px solid #F26D21; }
   .bt-warning:hover {
     color: #F26D21;
     background: #fff;
@@ -432,7 +431,7 @@ h6 {
 
 .bt-danger {
   background: #C02F1D;
-  border: 1px solid #fff; }
+  border: 1px solid #C02F1D; }
   .bt-danger:hover {
     color: #C02F1D;
     background: #fff;
