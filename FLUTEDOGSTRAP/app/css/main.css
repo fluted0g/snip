@@ -286,10 +286,12 @@ h6 {
       box-sizing: border-box; }
       .nav-01 ul li a:hover {
         background: #bbb;
-        border: 3px solid #bbb; }
-      .nav-01 ul li a:focus {
+        border: 3px solid #bbb;
+        text-decoration: none; }
+      .nav-01 ul li a:focus, .nav-01 ul li a:active {
         background: #bbb;
-        border: 3px solid #ddd; }
+        border: 3px solid #ddd;
+        text-decoration: none; }
 
 .nav-02 .fix-nav {
   display: inline-flex;

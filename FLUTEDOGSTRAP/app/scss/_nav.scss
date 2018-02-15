@@ -61,11 +61,13 @@
 				&:hover {
 					background: #bbb;
 					border: 3px solid #bbb;
+					text-decoration: none; 
 				}
 
-				&:focus {
+				&:focus, &:active {
 					background: #bbb;
 					border: 3px solid #ddd;
+					text-decoration: none; 
 				}	
 			}
 		}
