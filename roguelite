@@ -1,0 +1,205 @@
+								
+								--------------------------------	
+								|	--My Roguelike Project--   |
+								--------------------------------
+
+Game name: ??? /*CIVlike*/
+
+Concept: survival-historical-roguelike with social and technologic progression through the ages.
+
+Key features: 
+	·Evolving world map (tribes getting tracked and evolving, eventually trade, rumors, foreign legends and stories, sharing techs, etc should be implemented)
+	·Harsh wilderness survival: hunger, thirst, dangerous animals, natural disasters, hostile man (and neanderthals!), diseases and other health issues.
+	·Inheritance system: when you die your character becomes your first child (will growth logic be implemented, or just make no disctintions between child and adults?).
+	·Socio-technological progress: discover things by making concrete actions. Tribesmen will contribute with their own actions, too. Progressive complexity.
+	·Tribe management: your own NPCs. Order them around. Maybe start with just a wife and choose how much extra tribesmen to start with? (as difficulty parameter).
+
+Useful links:
+https://unity3d.com/es/learn/tutorials
+www.roguelikeradio.com
+https://www.reddit.com/r/roguelikedev/
+https://opengameart.org
+http://www.roguebasin.com/index.php?title=How_to_Write_a_Roguelike_in_15_Steps
+http://www.roguebasin.com/index.php?title=Code_design_basics
+
+/*** Basic Mechanics ***/
+
+	WORLD GEN: 
+	Barebones world, just wilderness, beasts generation and other tribes generation.
+	Should prepare data for future eras (future civ spots, future important natural disasters...)
+	Climate and biome generation.
+	Need to track actual tribes and make them advance more or less like the player (they should have better and worse techs, and can advance to next era before the player [will definitely do that on hard mode])
+
+	¿¿¿ Tiled world / multi tiled / fully open ???
+
+	NATURE:
+
+	Disease system should be complex and unforgiving (specially as game progresses)
+	Natural disasters should be extremely harsh, specially on early stages (but avoidable/partially avoidable if your tribe is still nomadic). Some disasters should be related to certain regions (earthquakes, volcanoes), while others don't. If it's a sedimentary tribe, Gods should be appeased to decrease chances of disasters triggering.
+
+	All tameable animals should appear in his wild ancient form. Add local fauna (depending on region and climate), specially dangerous or annoying fauna (bears, packs of felines, packs of wolves, hidden snakes,rodent thiefs,bird thiefs)
+	Big mixed herds should be common while being a nomad.
+
+	MOVEMENT: basic roguelike stuff. Adding climbing, swimming... etc.
+
+	VISION: undecided. Needs investigation.
+
+	COMBAT:
+	Qud combat: general HP, dice rolls, critical strikes, penetration, AV, DV...
+	vs.
+	URW combat: body part HP, dice rolls?, active defense, way more complex skillset, different types of armor...
+		[Maybe make combat simple at first, and start increasing difficulty when progress is made. Or the other way 'round.]
+
+	TIME:
+	Should time be as accurate as possible???
+	Should work like in URW (because most tasks will take X time to accomplish them)
+
+		Day = day/night cycle
+
+	1 turn = 1 minute (1440 turns/day)
+	vs.
+	1 turn = 1/2 minute (2880 turns/day)
+
+			[Until we know how this will turn out, don't expect accurate dates and timeframes]
+
+	1 day = 1/2 real month (two weeks)
+	World seasons: four standard seasons, with a length of 6 days
+
+	SKILLS/TRAITS:
+		Basic RPG frame:
+			-Strength - Attack damage, carry capacity
+			-Agility - Dodge, Aim
+			-Stamina - Hit Points, disease resistance
+			-Intellect - higher chance of advancing tech
+			-Charisma - stronger dice for leader rolls
+			-Willpower - stronger dice for psycho rolls
+			-Luck - stronger dice for misc rolls
+		Extra skills:
+			-Dexterity
+			-Survival
+			-INSTINCT (this should be like, really special, maybe high at the start, decreasing with each generation, high instinct helps combat, low instinct helps teching up)
+
+
+	BASIC ABILITIES(no techs):
+			-Manipulate
+			-Examine
+			-Dismantle [(stronger examine, destroys object, gives some material)]	
+			-Chew
+			-Smell
+			-Throw
+
+	TECHS AND RESEARCH:
+		This is the hard thing to do... we'll set the first tech as an example (stonecrafting)
+
+		Starts at 0% (duhh).
+		Some activities will trigger a change in the world or object involved, examining it will trigger progress on the tech:
+			-Once a trigger is triggered, there's a way to tech up all the way to 100% (would be bashing stones in this case); but other undiscovered triggers may help with it. Other techs may need more triggers to get this "grindy" tech-up.
+			-Throwing rocks. (some of them will break, they'll transform into "accidental sharp rocks"[name to be improved xD] and once examined, will advance the tech[a 20%?])
+			-Seeing a ¿buzzard? throwing rocks from the skies.
+			-Observing and meditating inside a cave full of STALACTITES.
+
+	BREEDING:
+	Started by "celebrating mating dance" (or something like that); IF succesful, mating will take... half an hour? an hour? then, the female will get pregnant and have a child later (2 to 3 ingame days? one season?) After being born, they should take a week to mature (or 2/3 seasons?)
+
+	DYING/CHARACTER PROGRESSION: 
+	Early humans should be playable during at most 5 years (120 days).
+	Your age should be noticeable (at your fourth year you will become old, on the end of the fifth you will be "retired" and your son will take on, your old character will be in the tribe, acting as an elder)
+
+/*** Progression & Episodes ***/
+	
+	·Tutorial - "Prometheans" (first demo!): cover basics: movement, tribe management, hunting, growing the tribe (and family), then discover fire. HOMO ERECTUS / HABILIS ???
+
+	·Episode 1 - "StoneLike": Nomads to settlers.
+
+	·Episode 2 - "AncientLike": Settlement to city-state. Starting to become an strategy game instead of a roguelike.
+
+	!--- From this point on, it's all pure speculation (don't think the game will adapt to new eras without getting out of point) ---!
+
+	·Episode 3 - "EmpireLike": City-state to Ancient Empire. 
+
+	·Episode 4 - "DarknessLike": Anarchy and religion evolving into Feudalism. Back to roguelike roots? Focus on technological advances?
+
+	·Episode 5 - "ModernLike": recover the lost knowledge, create a new era of knowledge.
+
+	·Episode 6 - "IndustrialLike": start manufacturing.
+
+	·Episode 7 - "FutureLike": the darkest hour, and beyond.
+
+	·Episode 8 - "Post-civLike": black mirror style.
+
+/*** Prometheans ***/
+
+	HISTORIC TIMEFRAME: hominid era. Homo habilis; the conquest of fire; hominid stone-working, etc. 
+
+	GENERAL DESIGN:
+		-No initial techs; ideal tech system start.
+		-Discover fire, tame it (as possible) and cook meat to advance to stonelike.
+		-Get punished by the Gods for defying them (that's why it is called Prometheans) [maybe a final boss fight of some kind].
+		-"Tribe" members do most stuff automatically, no need to order them around.
+		-Tech is only influenced by your discoveries.
+		-Some kind of "quest" system so it distracts you from playing with rocks and stuff.
+
+	PROGRESSION: 
+		-Maybe set a starting scenario where you have to go back to your tribe, like a basic tutorial.
+		-Once in your tribe you're tasked with various menial jobs which can be made easier by developing the tech.
+		So the development would be:
+			-Discover rock tools by playing with rocks in different manners.
+			-Prepare meat from hunted prey to be eaten. Having sharp rocks will help.
+			-Eventually, cutting meat will get a proficient level, and the animal hide can be used to make rudimentary clothing.
+			-Craft javelins with sharpened rocks.
+			-Discover fire (storms will be frequent so trees will tend to catch fire)
+			-Loose fear of fire (maybe some kind of quest line or ritual...)
+			-Tame the fire (pick a branch on flames, set it on the camp)
+			-Use the fire (cook meat, harden the spear)
+
+/*** StoneLike features ***/
+	
+	HISTORIC TIMEFRAME:
+	Start on latter glacial era, so your tribe can try to hunt a Mammoth. Once adv. fire-making is discovered, it should end within a pair of days.
+	End upon discovering basic agriculture or animal husbandry (these two techs should be complimentary in the way of discovering them).
+
+	GENERAL DESIGN:
+	Food and tameable animals progressively become more uncommon, as research is getting done. Need to find caves for shelter. Neanderthal should be an early but easy threat (sometimes they will be pacific and help you); other humans shouldn't (but some will) be aggresive. Latter part includes the "preambles" of settlements: makeshift shelters and granaries, extra food processing, better construction techs. Some places in the world will start having enough resources to settle more time than before (and will be good spots for future, real settlements).
+
+	PROGRESSION LINE:
+		Starting techs: 
+			-Language (basic, improves passively depending on tech and customs level, higher levels will allow better instructions)
+			-Basic leadership (allows basic orders for tribesmen, improves with language)
+			-Fire-making (static, allows to gather "natural-fire", put it on a basic fireplace, and keep it alive)
+			-Basic stone working(simple axes,simple spears,pointy rock)
+			-Herblore (identifying edible stuff, gathering it, eventually more plants are identified)
+			-Hunting (beastlore mainly)
+			-Spiritual world (basic religious/"spirit's favor" framework, including customs and rituals; starting rituals: call for thunder-creates fire, small sacrifice-spend food to appeal the spirits)
+			-Exploration (travel to new sites, bookmark interesting ones, scout surroundings...)
+		TECHS TO DISCOVER (in order of progression):
+			-Wood working: discovered by picking branches and using them as weapons/proto-tools  (fire-hardened javelins, javelin propeller, clubs, walking sticks, basic spear, fireplace)
+			-Advanced stone working: by cutting stones, eventually will work (stone knives, axes, hammers, stone spear, shovel)
+			-Advanced fire-making: discovered by crafting kindle, keeping coals hot, and finding flint. (portable coal, torch[with cord])
+			-Cooking: leaving leftovers near fire. (roasting)
+			-Gathering: new tools, better gathering. (sickles, new forageables)
+			-Hunting techniques: acquired by hunting and observing prey (trapping,tactics)
+			-Bone working (bone arrows, sewing equipment[awls], bone-mancy[shaman],heavy club, music instruments, bone hooks[fishing])
+			-Basic Hideworking (furs(for clothing, rots), rawhide(fur must be cleaned and dried, very basic leather)
+			-Thread working (baskets, cords, bows)
+			-Fishing: poking a spear in the water. Gathering small seafood (spear fishing, nets, bait, fishing rod)
+			-Shell-crafting: ritual stuff, "luxury" items.
+			-Earth digging: making holes in the dirt. (water-hole, fire-hole, garbage-hole, poop-hole, primitive pickaxe, stone mining [better stone material])
+			-Shamanism: discover a rare resource(shell stuff, natural paint), have some tribesman die and bury him, gather shrooms, then have someone idle for some time (or you yourself?, becoming shaman would require another tribesman to act as the tribe-leader) (ancient paintings, burial customs, sky-observation, magic-shrooms)
+			-Culture: once some of their components start appearing, you'll end up creating a unique culture [procedural FTW] (music, paintings, customs)
+			-Butchering: keep killing beasts. Better efficiency getting meat and materials from animals.
+
+								-------------------------------------	
+								|	--My Roguelike Project Mk.II--	|	-------------------------------------
+
+Game name: SporeLike
+
+	Original spore concept (cell to space civ) the roguelike way:
+		-Actual evolution mechanics should be used (cells evolving from taking sun to start eating other cells, etc)
+		-Evolution phases (when completed, species can be saved, to "ease" permadeath):
+			·Cell stage: start in the vast ocean, just water tiles all around; at the start you have to catch glucose molecules (glycolisis metabolism), but soon you can develop fotosynthesis, then you'll have to fight for the best "sun" spots. Eventually the ocean will be filled with competitors; you'll be able to develop better photosynthesis receptors (either better performance with less sunlight, or just bigger and badder, etc)
+			and you'll also be able to swap to oxidative metabolism.
+			·Animal stage
+			·Tribal stage
+			·Civ stage
+			·Space stage
+		-First build will be just cell stage, to start practicing with finishing a game.

@@ -1,0 +1,38 @@
+.foot {
+	padding: 0 0 2em 0;
+
+	.first-segment {
+		display: inline-flex;
+		justify-content: space-evenly;
+
+		width: 70%;
+
+		.foot-col {
+			display: inline-block;
+
+			h5 {
+				display: inline-block;
+				width: 77%;
+				line-height: calc(#{$baseline-height} / 1.75);
+				border-bottom: 1px solid $placeholder-gray;
+			}
+
+			ul {
+				display: inline-block;
+				list-style: none;
+
+				li {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.second-segment {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 20%;
+	}
+}

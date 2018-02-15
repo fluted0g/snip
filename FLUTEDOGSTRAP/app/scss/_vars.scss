@@ -1,0 +1,34 @@
+/*
+*	Fluted0gStrap SCSS variables
+*/
+
+
+/*** TYPOGRAPHY ***/
+$font-size: 16px;
+$baseline-height: 30px;
+$font-family-sans: 'Open Sans',Arial, sans-serif;
+$font-family-serif: Georgia, serif;
+
+
+/*** COLORS ***/
+$font-color: #000;
+$font-color-2: #000;
+$anchor-color: #000;
+$anchor-hover: #000;
+$anchor-visited: #000;
+/* background-primary */
+$base-bckgd: #000;
+$light-bckgd: lighten($base-bckgd, 25%);
+$lighter-bckgd: lighten($base-bckgd, 50%);
+$dark-bckgd: darken($base-bckgd, 25%);
+$darker-bckgd: darken($base-bckgd, 50%);
+/* background-secondary */
+$base-bckgd-2: #000;
+$light-bckgd-2: lighten($base-bckgd-2, 25%);
+$lighter-bckgd-2: lighten($base-bckgd-2, 50%);
+$dark-bckgd-2: darken($base-bckgd-2, 25%);
+$darker-bckgd-2: darken($base-bckgd-2, 50%);
+/* misc colors */
+$placeholder-gray: #999;
+
+/*** ASSETS ***/

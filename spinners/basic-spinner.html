@@ -1,0 +1,83 @@
+<!-- SIMPLE SPINNER STRUCTURE (no styles) -->
+
+<!--HTML-->
+<div class="spinner-wrapper">
+    <h3>Cargando</h3>
+    <!-- needs and image -->
+    <img class="spinner" alt="" src=""/>
+</div>
+
+<!--CSS-->
+<style type="text/css">
+	.spinner-wrapper {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		
+		margin: 0;
+		padding: 0;
+	}
+	.spinner-wrapper h3 {
+		animation: flash 1s linear;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		will-change: opacity;
+	}
+	.spinner {
+		animation: spin 1.5s linear;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		will-change: transform;
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		25% {
+			transform: rotate(-90deg);
+		}
+		50% {
+			transform: rotate(-180deg);
+		}
+		75% {
+			transform: rotate(-270deg);
+		}
+		100% {
+			transform: rotate(-360deg);
+		}
+	}
+
+	@keyframes flash {
+		0% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+</style>
+
+<!--JAVASCRIPT-->
+<script type="text/javascript">
+	//Spinner Preloader
+	jQuery(window).on('load', function() {
+		preloaderFadeOutTime = 500;
+		function hidePreloader() {
+			var preloader = jQuery('.spinner-wrapper');
+			preloader.fadeOut(preloaderFadeOutTime);
+		}
+		hidePreloader();
+	});
+</script>

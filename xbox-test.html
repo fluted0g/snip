@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+	<title>x-box</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Esqueleto básico para HTML"/>
+	<meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3"/>
+	<meta name="author" content="Álvaro Borrajeros Estrada" />
+	<meta http-equiv="expires" content="tiempo de expiración en segundos"/>
+
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.x-box {
+			position: relative;
+
+			width: 100vw;/*calc(100vw - 1em);*/
+			height: 100vh;/*calc(100vh - 1em);*/
+		}
+		.x-item {
+			height: 100%;
+			width: 100%;
+
+			display: inline-block;
+
+			border-top: 50vh solid black;
+    		border-bottom: 50vh solid red;
+    		border-left: 50vw solid green;
+    		border-right: 50vw solid blue;
+		}
+		.x-content {
+			position: absolute;
+			display: inline-flex;
+
+			justify-content: center;
+			align-items: center;
+
+			color: white;
+		}
+		.x-content-top {
+			top: 2.5em;
+			bottom: calc(52% + 8em);
+			left: 35%;
+			right: 35%;
+		}
+		.x-content-bottom {
+			bottom: 2.5em;
+			top: calc(52% + 8em);
+			left: 35%;
+			right: 35%;
+		}
+		.x-content-left {
+			top: 25%;
+			bottom: 25%;
+			left: 2.5em;
+			right: calc(73% + 2.5em);
+		}
+		.x-content-right {
+			top: 25%;
+			bottom: 25%;
+			left: calc(73% + 2.5em);
+			right: 2.5em;
+		}
+
+		/*
+		.x-top, .x-bottom {
+			width: 100%;
+			height: 50%;
+		}
+
+		.x-top {
+			border-top: 50vh solid white;
+    		border-left: 50vw solid red;
+    		border-right: 50vw solid red;
+		}
+
+
+		.x-left, .x-right {
+			position: absolute;
+			top: 0;
+
+			width: 50%;
+			height: 100%;
+		}
+
+		.x-left {
+			left: 0;
+		}
+
+		.x-right {
+			left: 50%;
+		}
+		*/
+	</style>
+</head>
+<body>
+<!--
+<div class="x-box">
+	<div class="x-item x-top">
+		<p>This is sparta</p>
+		<h1>ljasfkjfasjksfajkfsa</h1>
+		<div>
+			<p>Hey ho!</p>
+			<span>Let's go!</span>
+		</div>
+		<div>
+			<p>lkbjsdfhkjlasfdkjgsfdajsdfgkjsfdgkhho  datwidagg sd gsad gsda gra rwa rega gsfra rgfa teu t fd fdfojh oih ihuih gu guy utf yuf f yutfytg ufy y yfc </p>
+		</div>
+	</div>
+	<div class="x-item x-left"></div>
+	<div class="x-item x-bottom"></div>
+	<div class="x-item x-right"></div>
+</div>
+-->
+
+	<div class="x-box">
+		<div class="x-item"></div>
+		<div class="x-content x-content-top">
+		<p>Hey I am using an x-box, this is awesome! I wonder how it works...</p>
+	</div>
+		<div class="x-content x-content-left">
+		<h1>It looks so damn cool</h1>
+	</div>
+		<div class="x-content x-content-bottom">
+			<h2>Hey look at me too!</h2>
+		</div>
+		<div class="x-content x-content-right">
+			<span>this is a message, I think</span>
+		</div>
+	</div>
+</body>
+</html>

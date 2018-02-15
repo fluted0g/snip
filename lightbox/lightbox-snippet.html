@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+	<title>Lightbox Snippet</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Álvaro Borrajeros Estrada" />
+
+	<style>
+	#lightbox {
+		position:fixed; /* keeps the lightbox window in the current viewport */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0; 
+		left:0; 
+		width:100%; 
+		height:100%; 
+		background: rgba(80,80,80,.7); 
+		text-align:center;
+		z-index: 1001;
+	}
+
+	#lightbox .close-x {
+		position: absolute;
+		top: -1.5%;
+		right: -1.5%;
+		transform: translate(1.5%,1.5%);
+
+		padding: 4px;
+		margin: -4px;
+		padding-bottom: 8px;
+
+		background-color: #111;
+		border: 2px solid #FFF;
+		border-radius: 50%;
+		
+		font-size:75px; 
+		color:#FFF;
+		line-height: .4;
+	}
+
+	#lightbox #lightbox-content {
+		position: relative;
+		max-width: 86%;
+	}
+
+	#lightbox img {
+		box-shadow:0 0 25px #111;
+		-webkit-box-shadow:0 0 25px #111;
+		-moz-box-shadow:0 0 25px #111;
+	}
+
+	.prev-chev, .next-chev, .close-x {
+		color: $white;
+		z-index: 1002;
+		cursor: pointer;
+	}
+
+	.prev-chev, .next-chev {
+		padding: 4px 6px;
+	}
+
+	.alt-display {
+		margin: 0 auto;
+		padding: 7px 0;
+		color: #fff;
+		text-shadow: 2px 2px 3px #111;
+		text-transform: uppercase;
+		text-align: center;
+	}
+</style>
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous">
+</script>
+
+</head>
+<body>
+	<div class="image-gallery">
+
+		<div class="gallery-item">
+			<div class="op-layer lightbox-trigger" data-image="" data-alt="" data-order="0" onclick="lightClick(0)">
+				<div>
+					<h3>Spa</h3>
+					<span><i class="fa fa-plus" aria-hidden="true"></i></span>
+				</div>
+			</div>
+
+		</div>
+		<div class="gallery-item">
+			<div class="op-layer lightbox-trigger" data-image="" data-alt="" data-order="1" onclick="lightClick(1)">
+				<div>
+					<h3>Vanité</h3>
+					<span><i class="fa fa-plus" aria-hidden="true"></i></span>
+				</div>
+			</div>
+		</div>
+		<div class="gallery-item">
+			<div class="op-layer lightbox-trigger" data-image="" data-alt="" data-order="2" onclick="lightClick(2)">
+				<div>
+					<h3>Vanité</h3>
+					<span><i class="fa fa-plus" aria-hidden="true"></i></span>
+				</div>
+			</div>
+		</div>
+		<div class="gallery-item">
+			<div class="op-layer lightbox-trigger" data-image="" data-alt="" data-order="3" onclick="lightClick(3)">
+				<div>
+					<h3>Vanité</h3>
+					<span><i class="fa fa-plus" aria-hidden="true"></i></span>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		function lightClick($order) {
+			var $this = jQuery.find('.lightbox-trigger[data-order="'+$order+'"]');
+			var $href = jQuery($this).data('image');
+			var $alt = jQuery($this).data('alt');
+			var $max = jQuery.find('.gallery-item').length-1;
+
+			if ($order == $max) {
+				var $next = 0;
+			} else {
+				var $next = $order + 1;
+			}
+
+			if ($order == 0) {
+				var $prev = $max;
+			} else {
+				var $prev = $order -1;
+			}
+
+			if (jQuery('#lightbox').length > 0) { // #lightbox exists
+
+				//place href as img src value
+				jQuery('#lightbox').html(					
+					'<span class="prev-chev" onclick="lightClick('+ $prev +')">' +
+					'<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>' +
+					'</span>' +
+					'<div id="lightbox-content">' + //insert clicked link's href into img src
+					'<span class="close-x" onclick="lightHide()">&times;</span>' +
+					'<img src="' + $href +'" />' +
+					'<div class="alt-display">'+$alt+'</div>' +
+					'</div>' +	
+					'<span class="next-chev" onclick="lightClick('+ $next +')">' +
+					'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>' +
+					'</span>');
+				//show lightbox window - you could use .show('fast') for a transition
+
+			}
+			else { //#lightbox does not exist - create and insert (runs 1st time only)
+				//create HTML markup for lightbox window
+				var lightbox = 
+				'<div id="lightbox">' +
+				'<span class="prev-chev" onclick="lightClick('+ $prev +')">' +
+				'<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>' +
+				'</span>' +
+					'<div id="lightbox-content">' + //insert clicked link's href into img src
+					'<p class="close-x" onclick="lightHide()">&times;</p>' +
+					'<img src="' + $href +'" />' +
+					'<div class="alt-display">'+$alt+'</div>' +
+					'</div>' +	
+					'<span class="next-chev" onclick="lightClick('+ $next +')">' +
+					'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>' +
+					'</span>' +
+					'</div>';				
+				//insert lightbox HTML into page
+				jQuery('body').append(lightbox);
+			}
+
+			jQuery('#lightbox').show();
+		};
+
+		function lightHide() {
+			jQuery('#lightbox').hide();
+		};
+
+		document.ready(function($) {
+			//Click anywhere on the page to get rid of lightbox window
+			$('body').on('click','#lightbox', function() {
+				$('#lightbox').hide();
+			});
+
+			// detects if ESC key is pressed
+			document.onkeydown = function(evt) {
+				evt = evt || window.event;
+				var isEscape = false;
+				if ("key" in evt) {
+					isEscape = (evt.key == "Escape" || evt.key == "Esc");
+				} else {
+					isEscape = (evt.keyCode == 27);
+				}
+				if (isEscape) {
+					$('#lightbox').hide();
+				}
+			};
+		});
+	</script>
+
+</body>
+</html>

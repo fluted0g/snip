@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+	<title>AWESOME Flex Grid v1.0</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Esqueleto básico para HTML"/>
+	<meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3"/>
+	<meta name="author" content="Álvaro Borrajeros Estrada" />
+	<meta http-equiv="expires" content="tiempo de expiración en segundos"/>
+
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+	<style>
+		.grid-container {
+			width: 66vw;
+			margin: 50px auto;
+			text-align: center;
+		}
+		.fancy-title {
+			display: inline-block;
+			padding: 0 20px;
+			margin-bottom: 50px;
+			line-height: 1.5;
+			border: 6px solid #111;
+			border-radius: 20px;
+		}
+		.col-no-pads {
+			padding: 0 !important;
+		}
+		.grid-wrapper {
+			display: inline-block;
+			width: 100%;
+			height: 50vh;
+			margin-bottom: 3em;
+		}
+
+		.grid-header {
+			height: 100%;
+			width: 15%;
+			background: #ddd;
+		}
+		.grid-header-left {
+			float: left;
+		}
+		.grid-header-right {
+			float: right;
+		}
+		.grid-grid {
+			display: inline-flex;
+			height: 100%;
+			width: 85%;
+			flex-flow: column wrap;
+			justify-content: space-between;
+		}
+		.grid-left {
+			align-items: flex-start;
+		}
+		.grid-right {
+			align-items: flex-end;
+		}
+		.grid-item {
+			flex: 0 1 49%;
+			width: 24%;
+			background: red;
+		}
+		.grid-item-big {
+			flex: 1 0 99%;
+			width: 48%;
+			background: black;
+		}
+	</style>
+</head>
+<body>
+<div class="grid-container">
+	<h1 class="fancy-title">The super awesome grid:</h1>
+<div class="grid-wrapper">
+	<div class="grid-header grid-header-left">FEATURED PRODUCTS</div>
+	<div class="grid-grid grid-right">
+		<div class="grid-item grid-item-big"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+	</div>
+</div>
+
+<div class="grid-wrapper">
+	<div class="grid-header grid-header-right">BEST-SELLERS</div>
+	<div class="grid-grid grid-left">
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item"></div>
+		<div class="grid-item grid-item-big"></div>
+	</div>
+</div>
+</div>
+</body>
+</html>

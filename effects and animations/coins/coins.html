@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+	<title>html squeleton</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Esqueleto básico para HTML"/>
+	<meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3"/>
+	<meta name="author" content="Álvaro Borrajeros Estrada" />
+	<meta http-equiv="expires" content="tiempo de expiración en segundos"/>
+
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	
+	.coin-purse {
+		text-align: center;
+	}
+
+	.coin {
+		position: relative;
+		height: 20em;
+		width: 20em;
+		border-radius: 100%;
+	}
+
+	.heads, .tails {
+		position: absolute;
+		top: 0;
+		left: 0;		
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		height: 100%;
+		width: 100%;
+
+		transition: transform 1s ease-in;
+		backface-visibility: hidden;
+		border-radius: 100%;
+	}
+
+	.heads {
+		transform: rotateY(0deg);
+	}
+	.tails {
+		transform: rotateY(180deg);
+	}
+	.coin:hover .heads {
+		transform: rotateY(180deg);
+	}
+	.coin:hover .tails {
+		transform: rotateY(0deg);
+	}
+
+	/*optional styling*/
+	#coin-01 {
+		margin: 50px auto;
+	}
+	#coin-01 .heads, #coin-01 .tails {
+		background-color: #D4AF37;
+		border: 16px dashed #ba9a30;
+	}
+</style>
+
+</head>
+<body>
+
+	<div class="coin-purse">
+		<div class="coin" id="coin-01">
+			<div class="heads">HELLO!</div>
+			<div class="tails">GOODBYE!</div>
+		</div>  
+	</div>
+
+</body>
+</html>

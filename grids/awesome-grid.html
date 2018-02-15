@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+	<title>AW-GRID</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Esqueleto básico para HTML"/>
+	<meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3"/>
+	<meta name="author" content="Álvaro Borrajeros Estrada" />
+	<meta http-equiv="expires" content="tiempo de expiración en segundos"/>
+
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	.aw-grid {
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr 1fr; 
+		grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap: 1em;
+  		grid-row-gap: 1em;
+  		justify-content: start;
+  		grid-auto-flow: row;
+	}
+	.aw-item {
+		display: inline-block;
+		height: 150px;
+		width: 150px;
+		background-color: gold;
+	}
+	.aw-header {
+		height: 300px;
+		background-color: gray;
+	}
+	.aw-big {
+		height: 300px;
+		width: 300px;
+		background-color: red;
+	}
+</style>	
+</head>
+<body>
+
+<div class="aw-grid">
+	<div class="aw-item aw-header"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item aw-big"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item aw-header"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item aw-big"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+	<div class="aw-item"></div>
+</div>
+
+</body>
+</html>

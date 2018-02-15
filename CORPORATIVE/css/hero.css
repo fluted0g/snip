@@ -1,0 +1,89 @@
+
+
+.hero-section {
+	height: 100vh;
+	width: 100vw;
+	background-color: #eee;
+	text-align: center;
+}
+
+.hero-container {
+	height: 100vh;
+	width: 100vw;
+	background: url('https://static.pexels.com/photos/374710/pexels-photo-374710.jpeg') no-repeat;
+	background-size: cover;
+}
+
+.real-hero {
+	height: 50vh;
+	width: 50vw;
+}
+
+.hero-title {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%,-65%);
+	color: #fff;
+	text-shadow: 2px 2px #111;
+}
+
+.hero-title h1 {
+	margin: 10px 0 10px 0;
+	font-size: 4rem;
+}
+
+.hero-title h3 {
+	margin: 10px 0 10px 0;
+	font-size: 2rem;
+}
+
+.hero-buttons {
+
+	position: absolute;
+    top: 55%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -45%);
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    transition: border 1s ease;
+}
+
+.hero-flex {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.hero-button {
+	/*
+	position: absolute;
+	top: 50%;
+	*/
+	width: 12rem;
+	display: inline-block;
+	padding: 0.7rem 0.1rem;
+	margin: 1rem;
+	background-color: transparent;
+	box-sizing: border-box;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.hero-button:hover {
+	border: 2px solid #42b3f4;
+}
+/* absolute is not the way... change buttons to flex, make a div to put it on the bottom part 
+#cta-1 {
+	left: 30%;
+	transform: translate(-50%,-30%);
+}
+
+#cta-2 {
+	left: 65%;
+	transform: translate(-50%,-30%);
+}
+*/
