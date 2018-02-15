@@ -189,7 +189,13 @@ img {
   text-rendering: optimizeLegibility; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #0044CC; }
+  a:hover, a:focus {
+    color: #4d88ff;
+    text-decoration: underline; }
+  a:visited, a:active {
+    color: #800080; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 15px 0;
@@ -361,82 +367,88 @@ h6 {
     outline: none; }
 
 .bt-primary {
-  background: #436fe8;
+  background: #107896;
   border: 1px solid #fff; }
   .bt-primary:hover {
-    color: #436fe8;
+    color: #107896;
     background: #fff;
-    border: 1px solid #436fe8; }
+    border: 1px solid #107896; }
   .bt-primary:focus {
-    box-shadow: 0 0 5px #436fe8; }
+    box-shadow: 0 0 5px #107896; }
 
 .bt-secondary {
-  background: #000;
+  background: #43abc9;
   border: 1px solid #fff; }
   .bt-secondary:hover {
-    color: #000;
+    color: #43abc9;
     background: #fff;
-    border: 1px solid #000; }
+    border: 1px solid #43abc9; }
   .bt-secondary:focus {
-    box-shadow: 0 0 5px #000; }
+    box-shadow: 0 0 5px #43abc9; }
 
 .bt-primary-ghost {
-  color: #436fe8;
+  color: #107896;
   background: #fff;
-  border: 1px solid #436fe8; }
+  border: 1px solid #107896; }
   .bt-primary-ghost:hover {
     color: #fff;
-    background: #436fe8;
+    background: #107896;
     border: 1px solid #fff; }
   .bt-primary-ghost:focus {
-    box-shadow: 0 0 5px #436fe8; }
+    box-shadow: 0 0 5px #107896; }
 
 .bt-secondary-ghost {
-  color: #000;
+  color: #43abc9;
   background: #fff;
-  border: 1px solid #000; }
+  border: 1px solid #43abc9; }
   .bt-secondary-ghost:hover {
     color: #fff;
-    background: #000;
+    background: #43abc9;
     border: 1px solid #fff; }
   .bt-secondary-ghost:focus {
-    box-shadow: 0 0 5px #000; }
+    box-shadow: 0 0 5px #43abc9; }
 
 .bt-success {
-  background: #12cc0c;
+  background: #829356;
   border: 1px solid #fff; }
   .bt-success:hover {
-    color: #12cc0c;
+    color: #829356;
     background: #fff;
-    border: 1px solid #12cc0c; }
+    border: 1px solid #829356; }
   .bt-success:focus {
-    box-shadow: 0 0 5px #12cc0c; }
+    box-shadow: 0 0 5px #829356; }
 
 .bt-warning {
-  background: #ffc300;
+  background: #F26D21;
   border: 1px solid #fff; }
   .bt-warning:hover {
-    color: #ffc300;
+    color: #F26D21;
     background: #fff;
-    border: 1px solid #ffc300; }
+    border: 1px solid #F26D21; }
   .bt-warning:focus {
-    box-shadow: 0 0 5px #ffc300; }
+    box-shadow: 0 0 5px #F26D21; }
 
 .bt-danger {
-  background: #e51010;
+  background: #C02F1D;
   border: 1px solid #fff; }
   .bt-danger:hover {
-    color: #e51010;
+    color: #C02F1D;
     background: #fff;
-    border: 1px solid #e51010; }
+    border: 1px solid #C02F1D; }
   .bt-danger:focus {
-    box-shadow: 0 0 5px #e51010; }
+    box-shadow: 0 0 5px #C02F1D; }
 
 /*
 *	List styles
 */
+ul {
+  list-style: circle inside; }
+
 li {
   margin-left: 1.5em; }
+
+.blank-list {
+  list-style: none; }
 
 .list-label {
   margin: 0; }

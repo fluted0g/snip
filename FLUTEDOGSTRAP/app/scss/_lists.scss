@@ -1,7 +1,13 @@
 /*
 *	List styles
 */
-
+ul {
+	list-style: circle inside;
+}
 li {margin-left: 1.5em;}
+
+.blank-list {
+	list-style: none;
+}
 
 .list-label {margin:0;}

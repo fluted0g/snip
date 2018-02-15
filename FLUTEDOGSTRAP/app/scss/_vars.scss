@@ -11,10 +11,10 @@ $font-family-serif: Georgia, serif;
 
 /*** COLORS ***/
 $font-color: #000;
-$font-color-2: #000;
-$anchor-color: #000;
-$anchor-hover: #000;
-$anchor-visited: #000;
+$font-color-2: #999;
+$anchor-color: #0044CC;
+$anchor-hover: lighten($anchor-color,25%);
+$anchor-visited: #800080;
 /* background-primary */
 $base-bckgd: #000;
 $light-bckgd: lighten($base-bckgd, 25%);
@@ -28,11 +28,11 @@ $lighter-bckgd-2: lighten($base-bckgd-2, 50%);
 $dark-bckgd-2: darken($base-bckgd-2, 25%);
 $darker-bckgd-2: darken($base-bckgd-2, 50%);
 /*buttons*/
-$bt-primary: #436fe8;
-$bt-secondary: #000;
-$bt-success: #12cc0c;
-$bt-warning: #ffc300;
-$bt-danger: #e51010;
+$bt-primary: #107896;
+$bt-secondary: #43abc9;
+$bt-success: /*#12cc0c*/#829356;
+$bt-warning: #F26D21;
+$bt-danger: #C02F1D;
 /* misc colors */
 $placeholder-gray: #999;
 

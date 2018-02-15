@@ -1,5 +1,3 @@
-
-
 var gulp = require('gulp'),
 	sass = require('gulp-sass');
 	useref = require('gulp-useref'),

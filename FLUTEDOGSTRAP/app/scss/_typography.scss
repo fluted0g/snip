@@ -13,6 +13,16 @@
 
 a {
     text-decoration: none;
+    color: $anchor-color;
+
+    &:hover, &:focus {
+    	color: $anchor-hover;
+    	text-decoration: underline;
+    }
+
+    &:visited, &:active {
+    	color: $anchor-visited;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
