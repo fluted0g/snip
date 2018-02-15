@@ -1,10 +1,5 @@
-/*** CSS custom framework [basic stuffs] ***/
 /*
-*	Just cover basic stuff
-*	
-*
-*
-*
+*	Main SCSS file, just imports!
 */
 /*
 *	Fluted0gStrap SCSS variables
@@ -13,24 +8,12 @@
 /*** COLORS ***/
 /* background-primary */
 /* background-secondary */
+/*buttons*/
 /* misc colors */
 /*** ASSETS ***/
-/*** GENERAL-SETUP ***/
-/* CSS-reset: */
-h1, h2, h3, h4, h5, h6, p, div, ul, li, a {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-li {
-  margin-left: 1.5em; }
-
-p {
-  margin: 30px 0; }
-
-img {
-  max-width: 100%; }
-
+/*
+*	General & unsorted styles
+*/
 *,
 *:before,
 *:after {
@@ -41,6 +24,18 @@ img {
 body {
   text-align: center;
   margin: 0; }
+
+h1, h2, h3, h4, h5, h6, p, div, ul, li, a {
+  /* (css reset) */
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+p {
+  margin: 30px 0; }
+
+img {
+  max-width: 100%; }
 
 /*** CONTAINERS ***/
 .full-wrapper {
@@ -175,12 +170,16 @@ body {
   text-align: right; }
 
 /*
+*	Text format
+*/
+/*
 *	Fluted0gStrap SCSS variables
 */
 /*** TYPOGRAPHY ***/
 /*** COLORS ***/
 /* background-primary */
 /* background-secondary */
+/*buttons*/
 /* misc colors */
 /*** ASSETS ***/
 :root {
@@ -227,6 +226,15 @@ h5 {
 h6 {
   font-size: 13.2px; }
 
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: bold; }
+
+/*
+*	Nav styles
+*/
 .nav-wrapper {
   position: relative;
   padding-bottom: 1em; }
@@ -312,6 +320,9 @@ h6 {
         background: #bbb;
         border: 3px solid #ddd; }
 
+/*
+*	Footer styles
+*/
 .foot {
   padding: 0 0 2em 0; }
   .foot .first-segment {
@@ -336,6 +347,9 @@ h6 {
     align-items: center;
     width: 20%; }
 
+/*
+*	Button styles
+*/
 .bt {
   padding: 10px 20px;
   font-weight: bold;
@@ -347,14 +361,14 @@ h6 {
     outline: none; }
 
 .bt-primary {
-  background: slateblue;
+  background: #436fe8;
   border: 1px solid #fff; }
   .bt-primary:hover {
-    color: slateblue;
+    color: #436fe8;
     background: #fff;
-    border: 1px solid slateblue; }
+    border: 1px solid #436fe8; }
   .bt-primary:focus {
-    box-shadow: 0 0 5px slateblue; }
+    box-shadow: 0 0 5px #436fe8; }
 
 .bt-secondary {
   background: #000;
@@ -367,15 +381,15 @@ h6 {
     box-shadow: 0 0 5px #000; }
 
 .bt-primary-ghost {
-  color: slateblue;
+  color: #436fe8;
   background: #fff;
-  border: 1px solid slateblue; }
+  border: 1px solid #436fe8; }
   .bt-primary-ghost:hover {
     color: #fff;
-    background: slateblue;
+    background: #436fe8;
     border: 1px solid #fff; }
   .bt-primary-ghost:focus {
-    box-shadow: 0 0 5px slateblue; }
+    box-shadow: 0 0 5px #436fe8; }
 
 .bt-secondary-ghost {
   color: #000;
@@ -417,6 +431,15 @@ h6 {
     border: 1px solid #e51010; }
   .bt-danger:focus {
     box-shadow: 0 0 5px #e51010; }
+
+/*
+*	List styles
+*/
+li {
+  margin-left: 1.5em; }
+
+.list-label {
+  margin: 0; }
 
 /*
 @import '_grids';

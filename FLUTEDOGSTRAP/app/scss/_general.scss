@@ -1,15 +1,6 @@
-/*** GENERAL-SETUP ***/
-
-/* CSS-reset: */
-h1,h2,h3,h4,h5,h6,p,div,ul,li,a {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
-li {margin-left: 1.5em;}
-p {margin: $baseline-height 0;}
-img {max-width: 100%;}
+/*
+*	General & unsorted styles
+*/
 
 *,
 *:before,
@@ -23,6 +14,17 @@ body {
 	text-align: center;
 	margin: 0;
 }
+
+h1,h2,h3,h4,h5,h6,p,div,ul,li,a {
+	/* (css reset) */
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+p {margin: $baseline-height 0;}
+img {max-width: 100%;}
+
 
 /*** CONTAINERS ***/
 .full-wrapper {

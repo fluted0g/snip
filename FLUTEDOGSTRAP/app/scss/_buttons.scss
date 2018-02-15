@@ -1,3 +1,7 @@
+/*
+*	Button styles
+*/
+
 .bt {
 	padding: 10px 20px;
 	font-weight: bold;
@@ -12,108 +16,108 @@
 }
 
 .bt-primary {
-	background: slateblue;
+	background: $bt-primary;
 	border: 1px solid #fff;
 
 	&:hover {
-		color: slateblue;
+		color: $bt-primary;
 		background: #fff;
-		border: 1px solid slateblue;
+		border: 1px solid $bt-primary;
 	}
 
 	&:focus {
-		box-shadow: 0 0 5px slateblue;
+		box-shadow: 0 0 5px $bt-primary;
 	}
 }
 
 .bt-secondary {
-	background: #000;
+	background: $bt-secondary;
 	border: 1px solid #fff;
 
 	&:hover {
-		color: #000;
+		color: $bt-secondary;
 		background: #fff;
-		border: 1px solid #000;
+		border: 1px solid $bt-secondary;
 	}
 
 	&:focus {
-		box-shadow: 0 0 5px #000;
+		box-shadow: 0 0 5px $bt-secondary;
 	}
 }
 
 .bt-primary-ghost {
-	color: slateblue;
+	color: $bt-primary;
 	background: #fff;
-	border: 1px solid slateblue;
+	border: 1px solid $bt-primary;
 
 	&:hover {
 		color: #fff;
-		background: slateblue;
+		background: $bt-primary;
 		border: 1px solid #fff;
 	}
 
 	&:focus {
-		box-shadow: 0 0 5px slateblue;
+		box-shadow: 0 0 5px $bt-primary;
 	}
 }
 
 .bt-secondary-ghost {
-	color: #000;
+	color: $bt-secondary;
 	background: #fff;
-	border: 1px solid #000;
+	border: 1px solid $bt-secondary;
 
 	&:hover {
 		color: #fff;
-		background: #000;
+		background: $bt-secondary;
 		border: 1px solid #fff;
 	}
 
 	&:focus {
-		box-shadow: 0 0 5px #000;
+		box-shadow: 0 0 5px $bt-secondary;
 	}
 }
 
 .bt-success {
-	background: #12cc0c;
+	background: $bt-success;
 	border: 1px solid #fff;
 
 	&:hover {
-		color: #12cc0c;
+		color: $bt-success;
 		background: #fff;
-		border: 1px solid #12cc0c;
+		border: 1px solid $bt-success;
 	}
 
 	&:focus {
-		box-shadow: 0 0 5px #12cc0c;
+		box-shadow: 0 0 5px $bt-success;
 	}
 }
 
 .bt-warning {
-	background: #ffc300;
+	background: $bt-warning;
 	border: 1px solid #fff;
 
 	&:hover {
-		color: #ffc300;
+		color: $bt-warning;
 		background: #fff;
-		border: 1px solid #ffc300;
+		border: 1px solid $bt-warning;
 	}
 
 	&:focus {
-		box-shadow: 0 0 5px #ffc300;
+		box-shadow: 0 0 5px $bt-warning;
 	}
 }
 
 .bt-danger {
-	background: #e51010;
+	background: $bt-danger;
 	border: 1px solid #fff;
 
 	&:hover {
-		color: #e51010;
+		color: $bt-danger;
 		background: #fff;
-		border: 1px solid #e51010;
+		border: 1px solid $bt-danger;
 	}
 
 	&:focus {
-		box-shadow: 0 0 5px #e51010;
+		box-shadow: 0 0 5px $bt-danger;
 	}
 }

@@ -2,7 +2,6 @@
 *	Fluted0gStrap SCSS variables
 */
 
-
 /*** TYPOGRAPHY ***/
 $font-size: 16px;
 $baseline-height: 30px;
@@ -28,6 +27,12 @@ $light-bckgd-2: lighten($base-bckgd-2, 25%);
 $lighter-bckgd-2: lighten($base-bckgd-2, 50%);
 $dark-bckgd-2: darken($base-bckgd-2, 25%);
 $darker-bckgd-2: darken($base-bckgd-2, 50%);
+/*buttons*/
+$bt-primary: #436fe8;
+$bt-secondary: #000;
+$bt-success: #12cc0c;
+$bt-warning: #ffc300;
+$bt-danger: #e51010;
 /* misc colors */
 $placeholder-gray: #999;
 

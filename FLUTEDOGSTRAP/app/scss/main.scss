@@ -1,10 +1,5 @@
-/*** CSS custom framework [basic stuffs] ***/
 /*
-*	Just cover basic stuff
-*	
-*
-*
-*
+*	Main SCSS file, just imports!
 */
 
 @import '_vars';
@@ -13,6 +8,7 @@
 @import '_nav';
 @import '_footer';
 @import '_buttons';
+@import '_lists';
 /*
 @import '_grids';
 @import '_forms';
