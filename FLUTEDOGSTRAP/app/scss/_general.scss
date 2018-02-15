@@ -7,13 +7,9 @@ h1,h2,h3,h4,h5,h6,p,div,ul,li,a {
 	border: 0;
 }
 
-li {
-	margin-left: 1.5em;
-}
-
-img {
-	max-width: 100%;
-}
+li {margin-left: 1.5em;}
+p {margin: $baseline-height 0;}
+img {max-width: 100%;}
 
 *,
 *:before,
@@ -43,11 +39,9 @@ body {
 	max-width: 95vw;
 	margin: 0 auto;
 	padding: 1em 0;
-
-	outline: 1px solid red;
 }
 
-/*** FLEX ***/
+/*** FLEX CONTAINER ***/
 .fx {display: flex;}
 .ifx {display: inline-flex;}
 .fx-col {flex-direction: column;}
@@ -61,19 +55,21 @@ body {
 .fx-between {justify-content: space-between;}
 .fx-around {justify-content: space-around;}
 
-/***FLEX COLUMNS***/
-.fx-1 {flex-basis: 100%;}
-.fx-2 {flex-basis: 50%;}
-.fx-3 {flex-basis: 33.3333%;}
-.fx-4 {flex-basis: 25%;}
-.fx-5 {flex-basis: 20%;}
-.fx-6 {flex-basis: 16.6666%;}
-.fx-7 {flex-basis: 14.2857%;}
-.fx-8 {flex-basis: 12.5%;}
-.fx-9 {flex-basis: 11.1111%;}
-.fx-10 {flex-basis: 10%;}
-.fx-11 {flex-basis: 9.0909%;}
-.fx-12 {flex-basis: 8.3333%;}
+/***FLEX CHILDS***/
+.fxc-1 {flex-basis: 100%;}
+.fxc-2 {flex-basis: 50%;}
+.fxc-3 {flex-basis: 33.3333%;}
+.fxc-4 {flex-basis: 25%;}
+.fxc-5 {flex-basis: 20%;}
+.fxc-6 {flex-basis: 16.6666%;}
+.fxc-7 {flex-basis: 14.2857%;}
+.fxc-8 {flex-basis: 12.5%;}
+.fxc-9 {flex-basis: 11.1111%;}
+.fxc-10 {flex-basis: 10%;}
+.fxc-11 {flex-basis: 9.0909%;}
+.fxc-12 {flex-basis: 8.3333%;}
+.fxc-shrink {flex-shrink: 1;}
+.fxc-grow {flex-grow: 1;}
 
 /*** ABSOLUTES ***/
 .abs-parent {position: relative;}
@@ -91,13 +87,6 @@ body {
 	left: 50%;
 	transform: translateX(-50%);
 }
-
-/*** BOX-SPACING ***/
-.pad-lighter {padding: 0 3px;}
-.pad-light {padding: 0 6px;}
-.pad-medium {padding: 0 12px;}
-.pad-high {padding: 0 24px;}
-.pad-higher {padding: 0 32px;}
 
 /*** MISCELLANEOUS ***/
 .il-block {display: inline-block;}
