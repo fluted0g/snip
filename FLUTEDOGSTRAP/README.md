@@ -1,4 +1,7 @@
-#### GENERAL NOTES:
+#### ABOUT:
+This is a custom css framework for myself. Mostly made for training my skills, and understanding better some design concepts.
+
+#### TO DO LIST:
 * Grids are needed (at least one with flexbox).
 * Need VARS for almost everything so it is easily customizable just changing the _vars.scss file then compiling.
 * Should refactor NAV (no need for UL/LI tags).
