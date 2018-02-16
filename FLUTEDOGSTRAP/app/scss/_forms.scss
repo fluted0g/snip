@@ -46,7 +46,11 @@
 
 		.upload-wrapper {
 			position: relative;
-			label {width:100%;}
+
+			label {
+				width:100%;
+			}
+
 			button {
 				width: 100%;
 				color: #000;
@@ -68,9 +72,19 @@
 			}
 		}
 
+		.radiobox-wrapper {
+			label {
+				width: unset;
+				float: left;
+			}
+		}
+
 		input[type='checkbox'], input[type='radio'] {
 			width: unset;
+			float: left;
+			clear: both;
 		}
+
 
 		textarea {}
 

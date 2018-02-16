@@ -64,7 +64,10 @@ img {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 1em 3px; }
+  padding: 1.5em 3px; }
+
+.post {
+  padding: 1.5em 7px; }
 
 /*** FLEX CONTAINER ***/
 .fx {
@@ -251,7 +254,7 @@ h6 {
   line-height: 21px; }
 
 p {
-  margin: 30px 0;
+  margin: calc(30px/3) 0;
   line-height: 20px; }
 
 /*** utility classes ***/
@@ -435,8 +438,13 @@ li {
         top: 0;
         left: 0;
         opacity: 0; }
+    .form-wrapper form .radiobox-wrapper label {
+      width: unset;
+      float: left; }
     .form-wrapper form input[type='checkbox'], .form-wrapper form input[type='radio'] {
-      width: unset; }
+      width: unset;
+      float: left;
+      clear: both; }
     .form-wrapper form input[type=range] {
       -webkit-appearance: none;
       /* Hides the slider so that custom slider can be made */

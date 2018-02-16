@@ -73,7 +73,7 @@ h6{
 }
 
 p {
-	margin: $baseline-height 0;
+	margin: calc(#{$baseline-height}/3) 0;
 	line-height: $baseline-height / 1.5;
 }
 
