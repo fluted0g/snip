@@ -1,4 +1,4 @@
-# GENERAL NOTES:
+#### GENERAL NOTES:
 * Grids are needed (at least one with flexbox).
 * Need VARS for almost everything so it is easily customizable just changing the _vars.scss file then compiling.
 * Should refactor NAV (no need for UL/LI tags).
