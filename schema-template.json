@@ -1,0 +1,45 @@
+<script type="application/ld+json">
+{ 
+"@context" : "http://schema.org",
+"@type" : "LocalBusiness", 
+"address" : {
+"@type": "PostalAddress",
+"addressLocality": "Albacete", 
+"addressRegion": "ALBACETE", 
+"postalCode": "02005", 
+"streetAddress": "Calle Baños 33" }, 
+"name":"Identidad Visual",
+"description" : "En Identidad Visual somos expertos en impresión offset y digital , diseño web , marketing online, rotulación y gran formato.",
+"url":"https://www.identidadvisual.com",
+"email":"info@identidadvisual.com",
+"telephone": ["(+34)967522152","(+34)910200250"],
+"logo": "http://www.identidadvisual.com/wp-content/uploads/2015/07/huellaicon.png",
+"image": "https://www.identidadvisual.com/wp-content/uploads/2016/10/weblogo.png",
+"priceRange" : "€€€€",
+"paymentAccepted":"Cash, Credit Card",
+"currenciesAccepted": "EUR",
+"openingHours": [ 
+"Mo-Fri 09:00-14:00", "Mo-Fri 16:00-20:00"],
+"hasMap": "https://www.google.es/maps/@38.9971,-1.86287,17z/data=!3m1!4b1!4m2!7m1!2e1?hl=es",
+"geo": {
+    	"@type": "GeoCoordinates",
+   	    "latitude": "38.9971",
+    	"longitude": "-1.86287"
+ 		},
+"sameAs" : [
+    "https://www.facebook.com/identidadvisual.es/",
+    "https://www.instagram.com/id3ntidadvisual/",
+    "http://www.linkedin.com/company/identidadvisual",
+    "https://plus.google.com/+IdentidadvisualEs",
+    "https://twitter.com/Id3ntidadVisual ",
+    "https://www.youtube.com/channel/UCkUV7LA7Zhjp80Wqb1lJfbw",
+    "https://myspace.com/id3ntidadvisual",
+    "https://es.pinterest.com/identidadvisual/",
+    "https://digg.com/u/Id3ntidadVisual",
+    "www.stumbleupon.com/stumbler/Id3ntidadVisual",
+    "https://identidadvisual.tumblr.com/",
+    "https://foursquare.com/id3ntidadvisual",
+    "https://www.yelp.es/biz/identidad-visual-albacete"
+ ]
+} 
+</script>

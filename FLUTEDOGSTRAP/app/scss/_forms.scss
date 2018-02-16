@@ -1,6 +1,8 @@
 /*
 *	Form styles
 */
+@import '_vars';
+@import '_mixins';
 
 .form-wrapper {
 	display: inline-block;
@@ -42,10 +44,115 @@
 			padding: 8px 16px;
 		}
 
+		.upload-wrapper {
+			position: relative;
+			label {width:100%;}
+			button {
+				width: 100%;
+				color: #000;
+				background-color: #fff;
+				border: 1px solid #fff;
+				border-radius: 3px;
+				padding: 5px 10px;
+
+				&:hover {
+					border: 1px solid #000;
+				}
+			}
+
+			input[type='file'] {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
+		}
+
+		input[type='checkbox'], input[type='radio'] {
+			width: unset;
+		}
+
 		textarea {}
 
 		select {
 			option {}
 		}
+
+		input[type=range] {
+			-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+			width: 100%; /* Specific width is required for Firefox. */
+			background: transparent; /* Otherwise white in Chrome */
+		}
+
+		input[type=range] {
+			-webkit-appearance: none;
+			margin: $thumb-height/2 0;
+			width: $track-width;
+			border: none;
+
+			&:focus {
+				outline: none;
+			}
+
+			&::-webkit-slider-runnable-track {
+				@include track();
+				@include shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color);
+				background: $track-color;
+				border-radius: $track-radius;
+				border: $track-border-width solid $track-border-color;
+			}
+
+			&::-webkit-slider-thumb {
+				@include thumb();
+				-webkit-appearance: none;
+				margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-height / 2);
+			}
+
+			&:focus::-webkit-slider-runnable-track {
+				background: lighten($track-color, $contrast);
+			}
+
+			&::-moz-range-track {
+				@include track();
+				@include shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color);
+				background: $track-color;
+				border-radius: $track-radius;
+				border: $track-border-width solid $track-border-color;
+			}
+			&::-moz-range-thumb {
+				@include thumb();
+			}
+
+			&::-ms-track {
+				@include track(); 
+				background: transparent;
+				border-color: transparent;
+				border-width: $thumb-width 0;
+				color: transparent;
+			}
+
+			&::-ms-fill-lower {
+				background: darken($track-color, $contrast);
+				border: $track-border-width solid $track-border-color;
+				border-radius: $track-radius*2;
+				@include shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color);
+			}
+			&::-ms-fill-upper {
+				background: $track-color;
+				border: $track-border-width solid $track-border-color;
+				border-radius: $track-radius*2;
+				@include shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color);
+			}
+			&::-ms-thumb {
+				@include thumb();
+			}
+			&:focus::-ms-fill-lower {
+				background: $track-color;
+			}
+			&:focus::-ms-fill-upper {
+				background: lighten($track-color, $contrast);
+			}
+		}
+
 	}
 }
