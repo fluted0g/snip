@@ -1,6 +1,6 @@
 #### ABOUT FLUTEDOGSTRAP:
 This is a custom css framework for myself. Mostly made for training my skills, and understanding better some design concepts.
-An yes, the project name is not original at all :D
+An yes, the project name is not original at all :sweat_smile:
 
 #### TO DO LIST:
 * Grids are needed (at least one with flexbox).
